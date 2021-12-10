@@ -1,9 +1,0 @@
-<script type="text/javascript">window.__admin_media_prefix__ = "{% static 'admin/' %}";</script>
-{{ form.media }}
-<form action="{% url 'some_url' %}" method="post">
-    {% csrf_token %}
-    <table>
-        {{ form.as_table }}
-    </table>
-    <input type="submit" value="Submit">
-</form>
